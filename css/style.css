@@ -2,22 +2,41 @@
 
 html{font-family: 'Noto Sans KR', sans-serif; }
 
-/*lyaout*/
-#wrap {width: 100%;}
-#header {width: 100%; height: 85px; background: #2a3338}
-#contents {width: 100%; height: 950px;}
-#footer {width: 100%; height: 95px; background: #282828;}
 
-/*contents layout*/
-#cont_nav {width: 100%; height:200px; background: #333;}
-#cont_tit {width: 100%; height:200px; background: #444;}
-#cont_ban {width: 100%; height:200px; background: #555;}
-#cont_cont {width: 100%; height:200px; background: #666;}
-
-/*container*/
-.container {width: 1080px; margin: 0 auto; height: inherit; background: rgba(255,255,255,0.3);}
 
 /*header*/
-.header {}
-.header .header-logo {padding:10px}
-.header .header-logo a {color:#373f44; display: inline-block; font-size: 22px;}
+.header {width: 1080px; height: 85px; margin: 0 auto;}
+.logo {width: 190px; float: left; margin-top: 25px; margin-left: 20px;}
+.text {width: 190px; font-size: 23px; color: #2a3338; display: inline-block; margin-left: 10px; margin-top: 38px; letter-spacing: -1px;font-weight: bold;}
+
+/*nav*/
+.nav {border-top: #e5e5e5 1px solid; border-bottom: #e5e5e5 1px solid; font-size: 16px; font-weight: bold;}
+.on {color: #4f23e5;}
+.nav-box {width: 1080px; height: 43px; margin: 0 auto; border-left: #e5e5e5 1px solid; border-right: #e5e5e5 1px solid;}
+.nav-home {width: 65px; height: 43px; border-right: #e5e5e5 1px solid; float: left;}
+.nav-home ul {overflow: hidden;}
+.nav-home ul li {float: left; margin-top: 6px; padding: 3px;}
+.nav-home ul li img {padding-left: 8px;}
+.nav-menu {height: 43px; font-size: 16px; font-weight: bold;}
+.nav-menu ul {overflow: hidden;}
+.nav-menu ul li {float: left; margin-top: 10px; padding-left: 40px; padding-right: 40px;}
+
+/*main_container*/
+.main {width: 1080px; height: 50px; background: cornflowerblue; margin: 0 auto; margin-top: 7px;}
+.banner {float: left;}
+.slide_banner {width: 100%; display: flex; justify-content: center;align-items: center;}
+.slider {width: 820px; height: 370px; overflow: hidden;}
+.slides {width: 500%; height: 370px; display: flex;}
+.slides input {display: none;}
+.slide {width: 50%; transition: 2s;}
+.slide img {width: 820px; height: 370px;}
+.navigation-manual {position: absolute; width: 820px; margin-top: 310px; margin-left: 76px; display: flex;}
+.manual-btn {border: 2px solid #000000; padding: 5px; border-radius: 10px; cursor: pointer; transition: 0.2s;}
+.manual-btn:not(:last-child){margin-right: 7px;}
+.manual-btn:hover {background: #000000;}
+#radio1:checked ~ .first {margin-left: 0;}
+#radio2:checked ~ .first {margin-left: -50%;}
+
+
+.aside {float: left; width: 252px; height: 370px;}
+
